@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guests of Go Azure on Go Azure Meetup</title>
+    <link>http://localhost:1313/guest/</link>
+    <description>Recent content in Guests of Go Azure on Go Azure Meetup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/guest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Joost van Uitert</title>
+      <link>http://localhost:1313/guest/jvuitert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guest/jvuitert/</guid>
+      <description>&lt;p&gt;Out in Nieuwegein, The Netherlands, you&amp;rsquo;ll find Joost van Uitert, a software engineer who loves making cool and efficient solutions. He&amp;rsquo;s got a real hunger for learning, and keyboards have been his latest passion in this tech journey.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

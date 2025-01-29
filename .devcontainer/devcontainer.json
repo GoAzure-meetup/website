@@ -25,11 +25,8 @@
 			]
 		}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install hub && git config --global user.email d.paulus@gmail.com && git config --global user.name 'Daniel Paulus'",
-	"containerEnv": {
-		"HUB_PROTOCOL": "ssh",
-		"GITHUB_USER": "PaulusTM"
-	}
+	"postCreateCommand": "git config --global user.email d.paulus@gmail.com && git config --global user.name 'Daniel Paulus'",
+	"containerEnv": {}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Configure tool-specific properties.

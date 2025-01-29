@@ -1,5 +1,5 @@
 # BaseURL = "https://www.goazure.nl/"
-BaseURL = "http://localhost:4280/"
+BaseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Go Azure Meetup"
 theme = "castanet"
@@ -8,7 +8,7 @@ buildFuture = false
 buildDrafts = false
 dataDir = "data"
 archetypedir = "archetypes"
-paginate = 9
+pagination.pagerSize = 9
 # googleAnalytics = ""
 
 [markup]
@@ -24,7 +24,7 @@ paginate = 9
 	redirect = "/:filename"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]#, "JSON"]
   page = ["HTML", "RSS"]
 
 # The theme supports menus with up to one submenu per menu item
@@ -42,21 +42,22 @@ paginate = 9
   name = "Guests"
   identifier = "guests"
   url = "/guest"
-[[Menu.Main]]
-  name = "Resources"
-  identifier = "resources"
-  url = "#!"
-[[Menu.Main]]
-  name = "Meetups"
-  identifier = "meetups"
-  url = "/meetups"
-  parent = "resources"
-[[Menu.Main]]
-  name = "Sponsor"
-  identifier = "sponsor"
-  url = "/sponsorship"
+# [[Menu.Main]]
+#   name = "Resources"
+#   identifier = "resources"
+#   url = "#!"
+# [[Menu.Main]]
+#   name = "Meetups"
+#   identifier = "meetups"
+#   url = "/meetups"
+#   parent = "resources"
+# [[Menu.Main]]
+#   name = "Sponsor"
+#   identifier = "sponsor"
+#   url = "/sponsorship"
 
 [params]
+# hide = true
 mainSections = ["episode"]
 site_theme = "blue"
 site_layout = "grid"
@@ -65,22 +66,23 @@ favicon = "favicon.ico"
 copyright_notice = "Copyright 2021 [Go Azure](https://www.goazure.nl)"
 # mailchimp_subscribe = ""
 # rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
-description = "Go Azure Meetup description."
+description = "This vibrant community is where Azure enthusiasts of all levels unite to explore the vast universe of Azure and cloud computing."
 # media_prefix = ""
   [params.feed]
-    copyright = "Copyright 2021 Go Azure" #do not use markdown in this field; it is used in the feed
+    copyright = "Copyright 2025 Go Azure" #do not use markdown in this field; it is used in the feed
 
   [params.social]
-    github = "arresteddevops"
+    github = "https://github.com/GoAzure-meetup"
     # facebook = ""
     # facebook_admin = [""]  # This needs to be a page admin to get domain insights
-    twitter = "arresteddevops"
-    twitter_domain = "arresteddevops.com" # This domain shows in twitter cards as "View on `twitter_domain`"
+    # twitter = "arresteddevops"
+    # twitter_domain = "arresteddevops.com" # This domain shows in twitter cards as "View on `twitter_domain`"
     # instagram = ""
-    youtube = "arresteddevops"
+    youtube = "goazure"
 
-  [params.authors]
-    [params.authors.Ado]
-		name = ""
-		thumbnail = "img/ado-logo-150.png"
-		bio = ""
+  # [params.authors]
+  #   [params.authors.Daniel]
+  #     name = "Daniel Paulus"
+  #     Pronouns = "He/Him"
+  #     thumbnail = "img/ado-logo-150.png"
+  #     bio = ""

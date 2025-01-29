@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go Azure Meetup</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Go Azure Meetup</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Mar 2024 19:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extending Copilot for M365</title>
+      <link>http://localhost:1313/march-24/</link>
+      <pubDate>Thu, 28 Mar 2024 19:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/march-24/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Get up and running with Kubernetes</title>
+      <link>http://localhost:1313/feb-24/</link>
+      <pubDate>Thu, 29 Feb 2024 19:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/feb-24/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Daniel Paulus</title>
+      <link>http://localhost:1313/host/dpaulus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/host/dpaulus/</guid>
+      <description>&lt;p&gt;Daniel is a serial conference and meetup organiser. He&amp;rsquo;s Head of Azure Solutions at The Factory, a Cloud Native focused consultancy company, and a Microsoft Azure MVP. He helps companies succeed with Cloud Native technologies and DevOps practices. When not working with tech you can find him out in the woods or fishing at a lake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Joost van Uitert</title>
+      <link>http://localhost:1313/guest/jvuitert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guest/jvuitert/</guid>
+      <description>&lt;p&gt;Out in Nieuwegein, The Netherlands, you&amp;rsquo;ll find Joost van Uitert, a software engineer who loves making cool and efficient solutions. He&amp;rsquo;s got a real hunger for learning, and keyboards have been his latest passion in this tech journey.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
