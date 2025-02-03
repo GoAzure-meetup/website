@@ -11,8 +11,6 @@ jobs:
     name: Build
     permissions:
       contents: write
-    outputs:
-      artifact-id: ${{ steps.artifact-upload-step.outputs.artifact-id }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -65,8 +63,8 @@ jobs:
           name: site-release
           path: public
       
-      - name: List files
-        run: ls -l 
+      - name: Zip Artifact
+        run: zip -r site-release.zip public
 
       - name: Create Release
         uses: ncipollo/release-action@v1.15.0
@@ -74,7 +72,7 @@ jobs:
           name: build-${{ github.run_number }}
           commit: main
           tag: latest
-          artifacts: ${{ needs.build.outputs.artifact-id }}
+          artifacts: site-release.zip
           token: ${{ secrets.GITHUB_TOKEN }}
           makeLatest: legacy
           draft: false
