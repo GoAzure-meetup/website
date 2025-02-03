@@ -42,11 +42,17 @@ jobs:
         # env: # Add environment variables here
         #   HUGO_VERSION: 0.38.2
       
-      - name: Create Release
-        uses: ncipollo/release-action@v1.15.0
-        with:
-          artifacts: public/**
-          token: ${{ secrets.GITHUB_TOKEN }}
-          makeLatest: legacy
-          draft: false
-          prerelease: false
+      - name: Archive Public folder
+        uses: actions/upload-artifact@v3
+        with: 
+          name: site-release
+          path: public/**
+
+      # - name: Create Release
+      #   uses: ncipollo/release-action@v1.15.0
+      #   with:
+      #     artifacts: public/**
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     makeLatest: legacy
+      #     draft: false
+      #     prerelease: false
