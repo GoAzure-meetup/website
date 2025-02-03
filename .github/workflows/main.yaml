@@ -19,7 +19,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
 
       - name: Build
-        run: hugo --log
+        run: hugo build --logLevel INFO
 
       - name: Deploy
         id: deploy

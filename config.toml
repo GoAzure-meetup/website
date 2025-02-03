@@ -1,5 +1,5 @@
-# BaseURL = "https://www.goazure.nl/"
-BaseURL = "http://localhost:1313/"
+BaseURL = "https://www.goazure.nl/"
+# BaseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Go Azure Meetup"
 theme = "castanet"
