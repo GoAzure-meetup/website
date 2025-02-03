@@ -47,7 +47,6 @@ jobs:
         with:
           artifacts: public/**
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ env.date }}
           makeLatest: legacy
           draft: false
           prerelease: false
