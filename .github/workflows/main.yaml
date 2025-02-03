@@ -10,6 +10,8 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,3 +36,13 @@ jobs:
           ###### End of Repository/Build Configurations ######
         # env: # Add environment variables here
         #   HUGO_VERSION: 0.38.2
+      
+      - name: Create Release
+        uses: ncipollo/release-action@v1.15.0
+        with:
+          artifacts: public/**
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.sha }}
+          makeLatest: legacy
+          draft: false
+          prerelease: false
