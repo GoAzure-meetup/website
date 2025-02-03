@@ -65,8 +65,9 @@ enable_jumbo = "false"
 favicon = "favicon.ico"
 copyright_notice = "Copyright 2021 [Go Azure](https://www.goazure.nl)"
 # mailchimp_subscribe = ""
+youtube_subscribe = "https://www.youtube.com/@goazure?sub_confirmation=1"
 # rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
-description = "This vibrant community is where Azure enthusiasts of all levels unite to explore the vast universe of Azure and cloud computing."
+description = "This vibrant community is where Azure enthusiasts of all levels unite to explore the vast universe of Azure and cloud computing. <p>Our mission is to foster a collaborative environment where we can exchange insights, experiences, and the latest trends in Azure. Whether you're intrigued by the intricate dance between VMs, PaaS, Container Solutions, and FaaS, or weighing the merits of Storage Accounts against Azure SQL, this is your go-to hub for all things Azure."
 # media_prefix = ""
   [params.feed]
     copyright = "Copyright 2025 Go Azure" #do not use markdown in this field; it is used in the feed
@@ -78,11 +79,20 @@ description = "This vibrant community is where Azure enthusiasts of all levels u
     # twitter = "arresteddevops"
     # twitter_domain = "arresteddevops.com" # This domain shows in twitter cards as "View on `twitter_domain`"
     # instagram = ""
-    youtube = "goazure"
+    youtube = "@goazure"
 
-  # [params.authors]
-  #   [params.authors.Daniel]
-  #     name = "Daniel Paulus"
-  #     Pronouns = "He/Him"
-  #     thumbnail = "img/ado-logo-150.png"
-  #     bio = ""
+  [params.authors]
+    [params.authors.Daniel]
+      name = "Daniel Paulus"
+      Pronouns = "He/Him"
+      thumbnail = "img/host/dpaulus.png"
+      bio = "Daniel is a serial conference and meetup organiser. He's Head of Azure Solutions at The Factory, a Cloud Native focused consultancy company, and a Microsoft Azure MVP. He helps companies succeed with Cloud Native technologies and DevOps practices. When not working with tech you can find him out in the woods or fishing at a lake."
+      [params.authors.Daniel.social]
+        github = "PaulusTM"
+        linkedin = "danielpaulus"
+        homepage  = "https://www.danielpaulus.com"
+    [params.authors.Micha]
+      name = "Mischa van den Burg"
+      Pronouns = "He/Him"
+      thumbnail = "img/host/mvdburg.png"
+      bio = ""
