@@ -13,6 +13,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Get current date
+        id: date
+        run: |
+          echo "{date}={$(date +'%Y-%m-%d')}" >> $GITHUB_ENV
+
       - uses: actions/checkout@v4
         with:
           submodules: true
@@ -42,7 +47,7 @@ jobs:
         with:
           artifacts: public/**
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
+          tag: ${{ env.date }}
           makeLatest: legacy
           draft: false
           prerelease: false
