@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/guest/jvuitert/</guid>
       <description>&lt;p&gt;Out in Nieuwegein, The Netherlands, you&amp;rsquo;ll find Joost van Uitert, a software engineer who loves making cool and efficient solutions. He&amp;rsquo;s got a real hunger for learning, and keyboards have been his latest passion in this tech journey.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Miska Kytö</title>
+      <link>http://localhost:1313/guest/mkyto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guest/mkyto/</guid>
+      <description>&lt;p&gt;Miska Kytö is a Microsoft MVP from Finland and an experienced copilot trainer and consultant.&lt;/p&gt;&#xA;&lt;p&gt;He is a young (seriously, he was born after Windows XP was released) but a prominent consultant and trainer. He is interested in almost everything Microsoft-related. In his day-to-day work, he works with Microsoft Teams, M365 Copilot, and Microsoft Mesh. He also leads the Microsoft Mesh team at one of the platform&amp;rsquo;s headline partners.&lt;/p&gt;&#xA;&lt;p&gt;Always interested in the next big thing, learning it, and then teaching it to everyone else.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
