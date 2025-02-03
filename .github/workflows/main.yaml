@@ -48,11 +48,14 @@ jobs:
           name: site-release
           path: public/**
 
-      # - name: Create Release
-      #   uses: ncipollo/release-action@v1.15.0
-      #   with:
-      #     artifacts: public/**
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     makeLatest: legacy
-      #     draft: false
-      #     prerelease: false
+      - name: Create Release
+        uses: ncipollo/release-action@v1.15.0
+        with:
+          name: latest
+          commit: main
+          tag: latest
+          artifacts: public/**
+          token: ${{ secrets.GITHUB_TOKEN }}
+          makeLatest: legacy
+          draft: false
+          prerelease: false
