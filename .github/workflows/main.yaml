@@ -66,12 +66,17 @@ jobs:
       - name: Zip Artifact
         run: zip -r site-release.zip public
 
+      - name: Tag Release
+        run: |
+          git tag build-${{ github.run_number }}
+          git push origin build-${{ github.run_number }}
+
       - name: Create Release
         uses: ncipollo/release-action@v1.15.0
         with:
           name: build-${{ github.run_number }}
           commit: main
-          tag: latest
+          tag: build-${{ github.run_number }}
           artifacts: site-release.zip
           token: ${{ secrets.GITHUB_TOKEN }}
           makeLatest: legacy
