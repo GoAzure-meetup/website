@@ -42,7 +42,7 @@ jobs:
         with:
           artifacts: public/**
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.sha }}
+          tag: ${{ github.ref }}
           makeLatest: legacy
           draft: false
           prerelease: false
