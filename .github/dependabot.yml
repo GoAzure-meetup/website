@@ -3,11 +3,12 @@ updates:
   - package-ecosystem: "devcontainers"
     directory: "/"
     schedule:
-      interval: dayly
+      interval: daily
       timezone: Europe/Amsterdam
+      
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: dayly
+      interval: daily
       timezone: Europe/Amsterdam
