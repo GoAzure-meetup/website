@@ -42,6 +42,10 @@ pagination.pagerSize = 9
   name = "Guests"
   identifier = "guests"
   url = "/guest"
+[[Menu.Main]]
+    name = "Upcoming Episodes"
+    identifier = "upcoming"
+    url = "/upcoming"
 # [[Menu.Main]]
 #   name = "Resources"
 #   identifier = "resources"
@@ -59,6 +63,7 @@ pagination.pagerSize = 9
 [params]
 # hide = true
 mainSections = ["episode"]
+show_next_upcoming = "true"
 site_theme = "blue"
 site_layout = "grid"
 enable_jumbo = "false"

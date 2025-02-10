@@ -1,9 +1,8 @@
-name: main
+name: pr
 
 on:
-  push:
-    branches:
-      - main
+  pull_request_target:
+    types: [opened, synchronize, reopened, closed]
 
 jobs:
   build:
@@ -15,18 +14,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-      
-      - name: Tag Release
-        run: |
-          git tag build-${{ github.run_number }}
-          git push origin build-${{ github.run_number }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
 
       - name: Build
-        run: hugo build --buildFuture --logLevel INFO
-
+        run: hugo build --buildFuture --logLevel INFO -b https://orange-bay-06b0d8003-${{github.event.number}}.4.azurestaticapps.net
+        
       - name: Archive Public folder
         uses: actions/upload-artifact@v4
         with: 
@@ -57,30 +51,14 @@ jobs:
           skip_api_build: true
           skip_app_build: true
 
-  release:
+  close_pull_request_job:
+    if: github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Release
-    permissions:
-      contents: write
-    needs: deploy
+    name: Close Pull Request Job
     steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v4
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
         with:
-          name: site-release
-          path: public
-      
-      - name: Zip Artifact
-        run: zip -r site-release.zip public
-
-      - name: Create Release
-        uses: ncipollo/release-action@v1.15.0
-        with:
-          name: build-${{ github.run_number }}
-          commit: main
-          tag: build-${{ github.run_number }}
-          artifacts: site-release.zip
-          token: ${{ secrets.GITHUB_TOKEN }}
-          makeLatest: legacy
-          draft: false
-          prerelease: false
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: "close"
