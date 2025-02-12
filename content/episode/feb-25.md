@@ -6,6 +6,5 @@ draft: false
 author: ["dpaulus"]
 guests: ["dgoguri"]
 episode_image: img/episode/0225.png
-upcoming: true
+upcoming: false
 ---
-
