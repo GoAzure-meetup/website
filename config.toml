@@ -31,14 +31,6 @@ pagination.pagerSize = 9
 # The menu name must be "Main"
 # The menus are sorted based upon their identifier
 [[Menu.Main]]
-  name = "About"
-  identifier = "about"
-  url = "/about"
-[[Menu.Main]]
-  name = "Contact"
-  identifier = "contact"
-  url = "/contact"
-[[Menu.Main]]
   name = "Guests"
   identifier = "guests"
   url = "/guest"
@@ -46,6 +38,14 @@ pagination.pagerSize = 9
     name = "Upcoming Episodes"
     identifier = "upcoming"
     url = "/upcoming"
+[[Menu.Main]]
+  name = "About"
+  identifier = "about"
+  url = "/about"
+[[Menu.Main]]
+  name = "Contact"
+  identifier = "contact"
+  url = "/contact"
 # [[Menu.Main]]
 #   name = "Resources"
 #   identifier = "resources"
@@ -85,6 +85,7 @@ description = "This vibrant community is where Azure enthusiasts of all levels u
     # twitter_domain = "arresteddevops.com" # This domain shows in twitter cards as "View on `twitter_domain`"
     # instagram = ""
     youtube = "@goazure"
+    meetup = "go-azure"
 
   [params.authors]
     [params.authors.Daniel]
