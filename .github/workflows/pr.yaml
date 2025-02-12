@@ -45,7 +45,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site-release
-          path: public/**
+          path: public
 
       - name: Deploy
         id: deploy
