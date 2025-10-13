@@ -74,7 +74,7 @@ jobs:
         run: zip -r site-release.zip public
 
       - name: Create Release
-        uses: ncipollo/release-action@v1.18.0
+        uses: ncipollo/release-action@v1.20.0
         with:
           name: build-${{ github.run_number }}
           commit: main
