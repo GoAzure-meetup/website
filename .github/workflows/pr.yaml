@@ -27,7 +27,7 @@ jobs:
         run: hugo build --buildFuture --logLevel INFO -b https://orange-bay-06b0d8003-${{github.event.number}}.4.azurestaticapps.net
         
       - name: Archive Public folder
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with: 
           name: site-release
           path: public/**
